@@ -1,11 +1,15 @@
 <h2 class="text-center">Товары</h2>
-<div class="card product-card" style="width: 200px;" *ngFor="let product of products">
-  <img class="card-img-top" src="{{product.imageUrl}}" alt="{{product.name}}">
-  <div class="card-body">
-    <h5 class="card-title">{{product.name}}</h5>
-    <p class="card-text">{{product.description}}</p>
-    <button type="button" class="btn btn-primary" (click)="addToCart(product)">
-      Купить за {{product.cost | currency}}
-    </button>
+<div class="row">
+  <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let product of products">
+    <div class="card product-card">
+      <img class="card-img-top" src="{{product.imageUrl}}" alt="{{product.name}}">
+      <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">{{product.description}}</p>
+        <button type="button" class="btn btn-primary" (click)="addToCart(product)">
+          Купить за {{product.cost | currency}}
+        </button>
+      </div>
+    </div>
   </div>
 </div>
