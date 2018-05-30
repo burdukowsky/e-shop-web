@@ -3,6 +3,8 @@
   <div class="card-body">
     <h5 class="card-title">{{product.name}}</h5>
     <p class="card-text">{{product.description}}</p>
-    <button type="button" class="btn btn-primary">Купить за {{product.cost | currency}}</button>
+    <button type="button" class="btn btn-primary" (click)="addToCart(product)">
+      Купить за {{product.cost | currency}}
+    </button>
   </div>
 </div>
