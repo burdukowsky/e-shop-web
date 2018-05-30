@@ -1,6 +1,6 @@
 import {Product} from './product';
 
-const URL_START = 'https://dummyimage.com/150x150/000/fff&text=';
+const URL_START = 'https://dummyimage.com/200x200/000/fff&text=';
 
 export const PRODUCTS: Product[] = [
   new Product(1, 'Milk', 'Super Milk', 40, `${URL_START}milk`),
